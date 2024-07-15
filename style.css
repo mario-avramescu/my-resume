@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.background-gradient {
+  background: rgb(34, 35, 41);
+  background: -moz-radial-gradient(
+    circle,
+    rgba(34, 35, 41, 1) -1%,
+    rgba(70, 58, 55, 1) 100%
+  );
+  background: -webkit-radial-gradient(
+    circle,
+    rgba(34, 35, 41, 1) -1%,
+    rgba(70, 58, 55, 1) 100%
+  );
+  background: radial-gradient(
+    circle,
+    rgba(34, 35, 41, 1) -1%,
+    rgba(70, 58, 55, 1) 100%
+  );
+  width: 100%;
+}
+
+.top-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff5ea;
+  text-align: center;
+  padding: 100px 0;
+}
+
+@media screen and (max-width: 850px) {
+  .top-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff5ea;
+    text-align: center;
+    padding: 100px 0;
+  }
+}
+
+.profile-image {
+  height: 200px;
+  width: 200px;
+  border: 2.5px solid #fff5ea;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.name h1 {
+  font-family: "Playwrite DK Uloopet", cursive;
+  font-weight: 400;
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+
+.name p {
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  font-size: 20px;
+}
+
+.name p span {
+  font-style: normal;
+  text-decoration: underline;
+}
+
+.section-background {
+  background-color: #fbfff4;
+  margin: 25px;
+  padding: 25px;
+}
+
+.mid-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  color: #352f36;
+}
+
+.mid-container h2 {
+  font-family: "Playwrite DK Loopet", cursive;
+  font-weight: 300;
+  font-size: 24px;
+  text-decoration: underline;
+}
+
+.mid-container p,
+.mid-container ul {
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+}
+
+footer {
+  margin-top: auto;
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+}
